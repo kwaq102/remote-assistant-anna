@@ -1,0 +1,218 @@
+header {
+    position: relative;
+
+    div.logo {
+        position: absolute;
+        top: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    div.content-header {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 1.4rem;
+            color: $primary-color;
+            text-shadow: 0 1px 1px $primary-color;
+            letter-spacing: 3px;
+
+            span {
+                display: block;
+                margin: 10px 0;
+                color: #9363dd;
+            }
+        }
+
+        div.socials-header {
+            width: 30%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                span {
+                    font-size: 20px;
+                    color: #143b5c;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.1rem;
+            text-align: center;
+            font-style: italic;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        button {
+            width: 90%;
+            display: block;
+            border-radius: 50px;
+            margin-top: 40px;
+            padding: 10px 0;
+            color: white;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-family: $text-font;
+
+            border: none;
+            outline: none;
+            background: -moz-linear-gradient(332deg, rgba(104, 58, 175, 1) 0%, rgba(189, 151, 246, 1) 100%);
+            background: -webkit-linear-gradient(332deg, rgba(104, 58, 175, 1) 0%, rgba(189, 151, 246, 1) 100%);
+            background: linear-gradient(332deg, rgba(104, 58, 175, 1) 0%, rgba(189, 151, 246, 1) 100%);
+
+        }
+
+        button:nth-of-type(2) {
+            background: -moz-linear-gradient(332deg, rgba(189, 151, 246, 1) 0%, rgba(104, 58, 175, 1) 100%);
+            background: -webkit-linear-gradient(332deg, rgba(189, 151, 246, 1) 0%, rgba(104, 58, 175, 1) 100%);
+            background: linear-gradient(332deg, rgba(189, 151, 246, 1) 0%, rgba(104, 58, 175, 1) 100%);
+        }
+    }
+
+    div.bg {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            height: 100%;
+            transform: translate(0%, 0%) scale(1);
+            opacity: 0;
+            animation: slider 21s linear infinite;
+        }
+
+        img.img3 {
+            animation-delay: 7s;
+        }
+
+        img.img1 {
+            animation-delay: 14s;
+        }
+    }
+
+    @keyframes slider {
+        0% {
+            transform: translate(0%, 0%) scale(1);
+            opacity: 0;
+        }
+
+        5% {
+            opacity: .1;
+        }
+
+        33.33% {
+
+            opacity: .1;
+        }
+
+        38.33% {
+            opacity: 0;
+        }
+
+        100% {
+            transform: translate(-20%, 20%) scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    @media (min-width: 600px) {
+        div.bg {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 374px) {
+    header {
+
+        div.content-header {
+            top: 45%;
+
+            h1 {
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    header {
+        div.logo {
+            top: 4%;
+            width: 40%;
+        }
+
+        div.content-header {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            div.socials-header {
+                a {
+                    span {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 2rem;
+            }
+
+            button {
+                width: 60%;
+                padding: 10px 0;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1023px) {
+    header {
+        div.logo {
+            top: 9%;
+            width: 400px;
+        }
+
+        div.content-header {
+            top: 55%;
+
+            div.socials-header {
+                width: 20%;
+            }
+
+            button {
+                width: 500px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
