@@ -1,0 +1,21 @@
+@mixin sectionHeading() {
+    margin: 20px 0;
+    font-family: $header-font;
+    text-align: center;
+    position: relative;
+}
+
+@mixin sectionHeadingAfter() {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 1px;
+    background: #256BA8;
+
+    @media(min-width: 768px) {
+        top: 50px;
+    }
+}

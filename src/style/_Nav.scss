@@ -4,7 +4,7 @@
     left: 0;
     width: 45%;
     height: 100%;
-    background-color: #143b5c;
+    background-color: $bg-color;
     z-index: 3;
     transition: all .5s ease-in-out;
 
@@ -29,18 +29,16 @@
                 font-family: $header-font;
                 font-weight: 300;
                 transition: .2s linear;
-
             }
 
             &:hover {
 
                 a {
-                    color: $secondary-color;
+                    color: #219fbf;
                     cursor: pointer;
                 }
             }
         }
-
     }
 }
 
@@ -73,7 +71,10 @@
                     left: 0;
                     width: 0;
                     height: 2px;
-                    background: linear-gradient(332deg, rgba(189, 151, 246, 1) 00%, rgba(147, 99, 221, 1) 100%);
+                    background: rgb(33, 159, 191);
+                    background: -moz-linear-gradient(332deg, rgba(33, 159, 191, 1) 0%, rgba(37, 107, 168, 1) 100%);
+                    background: -webkit-linear-gradient(332deg, rgba(33, 159, 191, 1) 0%, rgba(37, 107, 168, 1) 100%);
+                    background: linear-gradient(332deg, rgba(33, 159, 191, 1) 0%, rgba(37, 107, 168, 1) 100%);
                     transition: .2s linear;
                 }
             }

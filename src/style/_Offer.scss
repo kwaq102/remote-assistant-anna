@@ -1,0 +1,201 @@
+section.offer {
+    margin: 0 auto;
+
+    h2 {
+        @include sectionHeading();
+
+        &::after {
+            @include sectionHeadingAfter();
+        }
+    }
+
+    .offer-wrapper {
+
+        .offer-general-desc {
+            width: 90%;
+            margin: 0 auto;
+
+            p {
+                text-align: justify;
+                line-height: 150%;
+            }
+        }
+
+        .offer-desc {
+            .offer-card {
+                position: relative;
+                width: 300px;
+                height: 450px;
+                margin: 40px auto;
+                overflow: hidden;
+                border-radius: 20px;
+
+                .offer-card-front {
+                    overflow: hidden;
+                    border-radius: 20px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    background-color: black;
+                    backface-visibility: hidden;
+                    transform: perspective(900px) rotateY(0);
+                    transition: transform .4s;
+
+
+                    .offer-card-image {
+                        display: block;
+
+                        img {
+                            filter: brightness(.5);
+                        }
+                    }
+
+                    h3 {
+                        position: absolute;
+                        bottom: 20px;
+                        right: 15px;
+                        color: white;
+                        text-align: right;
+                        font-size: 1.4rem;
+                        letter-spacing: 1px;
+                        font-family: $header-font;
+                        font-weight: 400;
+
+                        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 50%);
+                    }
+                }
+
+                .offer-card-back {
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    backface-visibility: hidden;
+                    border-radius: 20px;
+                    transform: perspective(900px) rotateY(180deg);
+                    transition: transform .4s;
+                    background: rgb(33, 75, 191);
+                    background: -moz-linear-gradient(310deg, rgba(33, 75, 191, 1) 0%, rgba(8, 24, 60, 1) 100%);
+                    background: -webkit-linear-gradient(310deg, rgba(33, 75, 191, 1) 0%, rgba(8, 24, 60, 1) 100%);
+                    background: linear-gradient(310deg, rgba(33, 75, 191, 1) 0%, rgba(8, 24, 60, 1) 100%);
+
+                    h3 {
+                        height: 10%;
+                        padding-top: 15px;
+                        color: white;
+                        text-align: center;
+                        font-size: 1.4rem;
+                        letter-spacing: 1px;
+                        font-family: $header-font;
+                        font-weight: 400;
+                    }
+
+                    ul {
+                        height: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 0 20px;
+
+                        li {
+                            margin: 5px 5px 5px 20px;
+                            font-size: 1.1rem;
+                            list-style: none;
+                            color: white;
+                            font-family: $text-font;
+                            font-weight: 300;
+
+                            span {
+                                margin-right: 6px;
+                                margin-left: -20px;
+                                font-size: .8em;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .offer-card-front {
+                        transform: perspective(900px) rotateY(180deg);
+                    }
+
+                    .offer-card-back {
+                        transform: perspective(900px) rotateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    section.offer {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@media(min-width: 768px) {
+    section.offer {
+        margin-top: 30px;
+
+        .offer-wrapper {
+            .offer-general-desc {
+                width: 85%;
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .offer-desc {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+
+@media(min-width:1023px) {
+    section.offer {
+
+        h2 {
+            font-size: 2.2rem;
+        }
+
+        .offer-wrapper {
+            .offer-general-desc {
+                width: 70%;
+
+                p {
+                    line-height: 170%;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    section.offer {
+        margin-top: 70px;
+
+        .offer-wrapper {
+            .offer-general-desc {
+                width: 60%;
+                margin-bottom: 50px;
+            }
+
+            .offer-desc {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
