@@ -1,5 +1,6 @@
 section.offer {
     margin: 0 auto;
+    background-color: rgb(248, 248, 248);
 
     h2 {
         @include sectionHeading();
@@ -19,6 +20,14 @@ section.offer {
                 text-align: justify;
                 line-height: 150%;
             }
+        }
+
+        h3 {
+            margin: 20px auto;
+            font-size: 1.3rem;
+            font-family: $header-font;
+            text-align: center;
+            font-style: italic;
         }
 
         .offer-desc {
@@ -48,11 +57,11 @@ section.offer {
                         display: block;
 
                         img {
-                            filter: brightness(.5);
+                            filter: brightness(.8);
                         }
                     }
 
-                    h3 {
+                    h4 {
                         position: absolute;
                         bottom: 20px;
                         right: 15px;
@@ -83,7 +92,7 @@ section.offer {
                     background: -webkit-linear-gradient(310deg, rgba(33, 75, 191, 1) 0%, rgba(8, 24, 60, 1) 100%);
                     background: linear-gradient(310deg, rgba(33, 75, 191, 1) 0%, rgba(8, 24, 60, 1) 100%);
 
-                    h3 {
+                    h4 {
                         height: 10%;
                         padding-top: 15px;
                         color: white;
@@ -137,6 +146,12 @@ section.offer {
         h2 {
             font-size: 2rem;
         }
+
+        .offer-wrapper {
+            h3 {
+                font-size: 1.8rem;
+            }
+        }
     }
 }
 
@@ -177,6 +192,10 @@ section.offer {
                 p {
                     line-height: 170%;
                 }
+            }
+
+            h3 {
+                font-size: 2rem;
             }
         }
     }

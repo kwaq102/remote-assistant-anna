@@ -9,6 +9,7 @@ const Offer = () => {
                     <div className="offer-general-desc">
                         <p>Oferuję współpracę w zakresie ściśle określonych zadań, z których się rozliczamy, ale również stałą kooperację na wyłączność w określonych dniach czy godzinach. Jeżeli realizujesz ważny projekt i potrzebujesz asystentki pod ręką również jestem do dyspozycji. Z racji tego, że mam cygańską duszę, uwielbiam się przemieszczać i jestem urodzonym podróżnikiem, z wielką przyjemnością odwiedzę Twoje biuro niezależnie od lokalizacji, aby face to face omówić szczegóły naszej współpracy, wesprzeć Cię w przygotowaniu ważnego projektu czy też ogarnąć nagromadzone sprawy na miejscu.</p>
                     </div>
+                    <h3>W czym mogę Ci pomóc?</h3>
                     <div className="offer-desc">
                         <div className="offer-card">
 
@@ -16,11 +17,11 @@ const Offer = () => {
                                 <div className="offer-card-image">
                                     <img src={card} alt="" />
                                 </div>
-                                <h3>Sprawy administracyjne</h3>
+                                <h4>Sprawy administracyjne</h4>
                             </div>
 
                             <div className="offer-card-back">
-                                <h3>Sprawy administracyjne</h3>
+                                <h4>Sprawy administracyjne</h4>
                                 <ul>
                                     <li><span class="fas fa-check"></span>obsługa poczty</li>
                                     <li><span class="fas fa-check"></span>przygotowanie prezentacji</li>
@@ -39,16 +40,15 @@ const Offer = () => {
                         </div>
 
                         <div className="offer-card">
-
                             <div className="offer-card-front">
                                 <div className="offer-card-image">
                                     <img src={card} alt="" />
                                 </div>
-                                <h3>Copywriting</h3>
+                                <h4>Copywriting</h4>
                             </div>
 
                             <div className="offer-card-back">
-                                <h3>Copywriting</h3>
+                                <h4>Copywriting</h4>
                                 <ul>
                                     <li><span class="fas fa-check"></span>przygotowanie różnego rodzaju treści</li>
                                     <li><span class="fas fa-check"></span>teksty na bloga, stronę internetową,</li>
@@ -61,20 +61,17 @@ const Offer = () => {
                                     <li><span class="fas fa-check"></span>wywiady, recenzje, artykuły, felietony itd</li>
                                 </ul>
                             </div>
-
                         </div>
 
                         <div className="offer-card">
-
                             <div className="offer-card-front">
                                 <div className="offer-card-image">
                                     <img src={card} alt="" />
                                 </div>
-                                <h3>Organizacja spotkań, eventów i wyjazdów służbowych</h3>
+                                <h4>Organizacja spotkań, eventów i wyjazdów służbowych</h4>
                             </div>
-
                             <div className="offer-card-back">
-                                <h3>Organizacja spotkań, eventów i wyjazdów służbowych</h3>
+                                <h4>Organizacja spotkań, eventów i wyjazdów służbowych</h4>
                                 <ul>
                                     <li><span class="fas fa-check"></span>rezerwacja sali konferencyjnej,  hotelu, cateringu</li>
                                     <li><span class="fas fa-check"></span>rezerwacja lotu, pociągu, innego przejazdu</li>
@@ -82,20 +79,17 @@ const Offer = () => {
                                     <li><span class="fas fa-check"></span>organizacja wyjazdów integracyjnych</li>
                                 </ul>
                             </div>
-
                         </div>
 
                         <div className="offer-card">
-
                             <div className="offer-card-front">
                                 <div className="offer-card-image">
                                     <img src={card} alt="" />
                                 </div>
-                                <h3>Social media</h3>
+                                <h4>Social media</h4>
                             </div>
-
                             <div className="offer-card-back">
-                                <h3>Social media</h3>
+                                <h4>Social media</h4>
                                 <ul>
                                     <li><span class="fas fa-check"></span>przygotowywanie postów</li>
                                     <li><span class="fas fa-check"></span>obsługa kont w mediach społecznościowych</li>
@@ -103,7 +97,6 @@ const Offer = () => {
                                     <li><span class="fas fa-check"></span>administracja grup na Facebooku</li>
                                 </ul>
                             </div>
-
                         </div>
 
                     </div>

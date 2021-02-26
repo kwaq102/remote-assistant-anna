@@ -1,0 +1,143 @@
+section.advantages {
+
+    h3 {
+        margin: 20px auto;
+        position: relative;
+        font-size: 1.3rem;
+        text-align: center;
+        font-style: italic;
+
+        &::after {
+            content: 'Zalety współnej współpracy';
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: .7em;
+        }
+    }
+
+    .advantages-wrapper {
+        width: 100%;
+        margin: 50px auto;
+
+        .advantage-content {
+            width: 100%;
+
+            .advantage-image {
+
+                img {
+                    display: block;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+
+            .advantage-desc {
+                width: 100%;
+                margin: 0 auto;
+                padding: 40px 20px;
+                background-color: $bg-color;
+
+                h4 {
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    color: white;
+                }
+
+                p {
+                    line-height: 150%;
+                    color: white;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    section.advantages {
+
+        h3 {
+            font-size: 1.8;
+        }
+    }
+}
+
+
+@media(min-width: 767px) {
+    section.advantages {
+        .advantages-wrapper {
+            position: relative;
+            height: 3000px;
+
+            .advantage-content {
+                height: 500px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                .advantage-image {
+                    width: 55%;
+                    max-width: 500px;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+
+                    img {
+                        box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.39);
+                        -webkit-box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.39);
+                        -moz-box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.39);
+                    }
+                }
+
+                .advantage-desc {
+                    width: 50%;
+                    max-width: 500px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 20px;
+                }
+
+                &:nth-of-type(2) {
+                    top: 410px;
+
+                }
+
+                &:nth-of-type(3) {
+                    top: 820px;
+                }
+
+                &:nth-of-type(4) {
+                    top: 1230px;
+                }
+
+                &:nth-of-type(5) {
+                    top: 1640px;
+                }
+
+                &:nth-of-type(6) {
+                    top: 2050px;
+                }
+
+                &:nth-of-type(7) {
+                    top: 2460px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1023px) {
+    section.advantages {
+        h3 {
+            font-size: 2rem;
+        }
+
+        .advantages-wrapper {
+            width: 1000px;
+        }
+    }
+}
