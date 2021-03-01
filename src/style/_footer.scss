@@ -1,0 +1,103 @@
+footer {
+    color: white;
+    background-color: #292929;
+
+    .footer {
+        padding: 10px;
+
+        .footer-left {
+            margin-top: 10px;
+
+            h4,
+            h5 {
+                font-size: 1.2rem;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+
+            h5 {
+                margin-top: 5px;
+                margin-bottom: 10px;
+                font-size: 1.1rem;
+            }
+
+            p {
+                margin-top: 5px;
+                text-align: center;
+                font-size: .8rem;
+                font-weight: 300;
+            }
+        }
+
+        .footer-right {
+
+            .footer-nav {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    width: 40%;
+                    margin: 20px auto;
+
+                    li {
+                        font-size: .9rem;
+                        list-style: none;
+                        margin: 5px;
+                        cursor: pointer;
+
+                        &::before {
+                            width: 17px;
+                            margin-right: 10px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            content: '';
+                            height: 5px;
+                            border-top: 2px solid #219fbf;
+                            transition: .5s;
+                        }
+
+                        &:hover::before {
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        padding: 10px 0;
+        background-color: #000;
+
+        p {
+            margin: 5px;
+            font-size: 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    footer {
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+
+            .footer-left,
+            .footer-right {
+                width: 45%;
+            }
+
+            .footer-right {
+                .footer-nav {
+                    ul {
+                        // width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

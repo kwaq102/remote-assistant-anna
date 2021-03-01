@@ -1,5 +1,5 @@
 @mixin sectionHeading() {
-    margin: 20px 0;
+    margin-bottom: 20px;
     font-family: $header-font;
     text-align: center;
     position: relative;
@@ -29,4 +29,17 @@
         font-size: 1.2rem;
         line-height: 170%;
     }
+}
+
+@mixin afterSection() {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 100px;
+    -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
