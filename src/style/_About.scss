@@ -1,4 +1,5 @@
 section.about {
+    // background-color: #f8f8f8;
 
     h2 {
         @include sectionHeading();
@@ -28,8 +29,7 @@ section.about {
             background-color: $bg-color;
 
             p {
-                text-align: justify;
-                line-height: 150%;
+                @include text();
                 color: white;
 
                 strong {
@@ -63,8 +63,6 @@ section.about {
                 p {
                     width: 85%;
                     margin: 0 auto;
-                    font-size: 1.2rem;
-                    line-height: 170%;
                 }
             }
         }

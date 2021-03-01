@@ -1,6 +1,6 @@
 section.offer {
     margin: 0 auto;
-    background-color: rgb(248, 248, 248);
+    background-color: white;
 
     h2 {
         @include sectionHeading();
@@ -17,8 +17,7 @@ section.offer {
             margin: 0 auto;
 
             p {
-                text-align: justify;
-                line-height: 150%;
+                @include text();
             }
         }
 
@@ -188,6 +187,7 @@ section.offer {
         .offer-wrapper {
             .offer-general-desc {
                 width: 70%;
+                max-width: 1000px;
 
                 p {
                     line-height: 170%;
@@ -208,6 +208,7 @@ section.offer {
         .offer-wrapper {
             .offer-general-desc {
                 width: 60%;
+                max-width: 1000px;
                 margin-bottom: 50px;
             }
 

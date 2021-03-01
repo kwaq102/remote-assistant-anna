@@ -19,3 +19,14 @@
         top: 50px;
     }
 }
+
+@mixin text() {
+    text-align: justify;
+    line-height: 150%;
+    font-size: 1.1rem;
+
+    @media (min-width:600px) {
+        font-size: 1.2rem;
+        line-height: 170%;
+    }
+}

@@ -13,7 +13,7 @@ const Main = () => {
                 <About />
                 <Offer />
                 <Advantages />
-                <Tasks />
+                {/* <Tasks /> */}
                 <Cooperation />
                 <Prices />
                 <Contact />

@@ -1,0 +1,65 @@
+section.cooperation {
+    padding: 50px 0;
+    background-color: white;
+
+
+
+
+    .cooperation-wrapper {
+        .cooperation-desc {
+            p {
+                width: 90%;
+                max-width: 1000px;
+                margin: 0 auto 40px auto;
+                @include text();
+                text-align-last: center;
+            }
+        }
+    }
+
+    .cooperation-companies {
+
+        // h3 {
+        //     margin: 20px auto;
+        //     font-size: 1.3rem;
+        //     text-align: center;
+        //     font-style: italic;
+        // }
+        h2 {
+            @include sectionHeading();
+
+            &::after {
+                @include sectionHeadingAfter();
+            }
+        }
+
+        .logos {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #fff;
+
+            img {
+                display: block;
+                width: 150px;
+                padding: 20px 0;
+
+                filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
+                -moz-filter: grayscale(100%);
+                transition: .5s;
+
+                &:hover {
+                    filter: grayscale(0%);
+                    -webkit-filter: grayscale(0%);
+                    -moz-filter: grayscale(0%);
+                }
+            }
+        }
+    }
+}
