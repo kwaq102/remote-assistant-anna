@@ -19,19 +19,20 @@ section.cooperation {
 
     .cooperation-companies {
 
-        // h3 {
-        //     margin: 20px auto;
-        //     font-size: 1.3rem;
-        //     text-align: center;
-        //     font-style: italic;
-        // }
-        h2 {
-            @include sectionHeading();
-
-            &::after {
-                @include sectionHeadingAfter();
-            }
+        h3 {
+            margin: 20px auto;
+            font-size: 1.3rem;
+            text-align: center;
+            font-style: italic;
         }
+
+        // h2 {
+        //     @include sectionHeading();
+
+        //     &::after {
+        //         @include sectionHeadingAfter();
+        //     }
+        // }
 
         .logos {
             width: 90%;

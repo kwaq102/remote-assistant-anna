@@ -16,7 +16,7 @@ const Cooperation = () => {
                     </div>
 
                     <div className="cooperation-companies">
-                        <h2>Klienci</h2>
+                        <h3>Klienci</h3>
                         <div className="logos">
                             <img src={logoAnaconda} alt="logo anaconda" />
                             <img src={logoAnywhere} alt="logo anywhere" />
