@@ -3,10 +3,10 @@ footer {
     background-color: #292929;
 
     .footer {
-        padding: 10px;
+        // padding: 10px;
 
         .footer-left {
-            margin-top: 10px;
+            // margin-top: 10px;
 
             h4,
             h5 {
@@ -26,6 +26,12 @@ footer {
                 text-align: center;
                 font-size: .8rem;
                 font-weight: 300;
+                font-family: $header-font;
+
+                span {
+                    font-weight: bold;
+                    margin-right: 5px;
+                }
             }
         }
 
@@ -89,14 +95,6 @@ footer {
             .footer-left,
             .footer-right {
                 width: 45%;
-            }
-
-            .footer-right {
-                .footer-nav {
-                    ul {
-                        // width: 100%;
-                    }
-                }
             }
         }
     }

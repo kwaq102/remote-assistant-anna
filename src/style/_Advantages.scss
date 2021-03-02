@@ -19,7 +19,7 @@ section.advantages {
 
     .advantages-wrapper {
         width: 100%;
-        margin: 50px auto;
+        margin: 60px auto 0 auto;
 
         .advantage-content {
             width: 100%;
@@ -132,12 +132,18 @@ section.advantages {
 
 @media(min-width: 1023px) {
     section.advantages {
+        position: relative;
+
         h3 {
             font-size: 2rem;
         }
 
         .advantages-wrapper {
             width: 1000px;
+        }
+
+        &::before {
+            @include afterSection();
         }
     }
 }

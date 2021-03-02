@@ -1,9 +1,7 @@
 section.cooperation {
     padding: 50px 0;
     background-color: white;
-
-
-
+    position: relative;
 
     .cooperation-wrapper {
         .cooperation-desc {
@@ -61,6 +59,26 @@ section.cooperation {
                     -moz-filter: grayscale(0%);
                 }
             }
+        }
+    }
+
+    &::before {
+        @include afterSection();
+        background: #f8f8f8;
+    }
+}
+
+@media(min-width: 1023px) {
+    section.cooperation {
+
+        .cooperation-companies {
+            padding-bottom: 20px;
+
+        }
+
+        &::before {
+            @include afterSection();
+            background: #f8f8f8;
         }
     }
 }

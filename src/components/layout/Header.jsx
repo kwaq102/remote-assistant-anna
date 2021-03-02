@@ -38,9 +38,9 @@ const Header = () => {
                 </div>
 
                 <div className="bg">
-                    <img src={bgImg1} className="img1" alt="" />
-                    <img src={bgImg2} className="img2" alt="" />
-                    <img src={bgImg3} className="img3" alt="" />
+                    <img src={bgImg2} className="img1" alt="" />
+                    <img src={bgImg3} className="img2" alt="" />
+                    <img src={bgImg1} className="img3" alt="" />
                 </div>
 
 

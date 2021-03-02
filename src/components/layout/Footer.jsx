@@ -8,8 +8,8 @@ const Footer = () => {
                     <div className="footer-left">
                         <h4><strong>Wirtualna Asystentka</strong></h4>
                         <h5>Anna Gajewska</h5>
-                        <p>+48 661 182 851</p>
-                        <p>aniaG02@interia.pl</p>
+                        <p><span>Tel: </span>+48 661 182 851</p>
+                        <p><span>E-mail: </span>aniaG02@interia.pl</p>
                     </div>
 
                     <div className="footer-right">

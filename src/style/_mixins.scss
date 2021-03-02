@@ -38,8 +38,16 @@
     width: 100%;
     left: 0;
     right: 0;
-    bottom: 0px;
-    height: 100px;
+    bottom: -1px;
+    height: 40px;
     -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
+
+    @media(min-width: 767px) {
+        height: 70px;
+    }
+
+    @media(min-width: 1023px) {
+        height: 100px;
+    }
 }
